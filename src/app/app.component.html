@@ -1,0 +1,17 @@
+<nav class="navbar">
+  <a routerLink="" 
+     routerLinkActive="active"
+     [routerLinkActiveOptions]="{ exact: true }">
+    Inicio
+  </a>
+
+  <a routerLink="/customers" routerLinkActive="active">
+    Clientes
+  </a>
+
+  <a routerLink="/post" routerLinkActive="active">
+    Nuevo cliente
+  </a>
+</nav>
+
+<router-outlet></router-outlet>
