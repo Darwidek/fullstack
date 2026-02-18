@@ -5,8 +5,8 @@ import { routes } from './app.routes';
 
 export const appConfig: ApplicationConfig = {
   providers: [
-    provideRouter(routes),
-    provideHttpClient()
+    provideRouter(routes), // provide routing in angular
+    provideHttpClient() // provide http requests
   ]
 };
 

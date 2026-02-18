@@ -8,9 +8,9 @@ import { Customer } from '../customer';
 })
 export class CustomerService {
 
-  private api: string = 'http://localhost:8080/api/customers';
+  private api: string = 'http://localhost:8080/api/customers'; // url const to configure request
 
-  constructor(private http: HttpClient) { } // vamos por la leccion 19 y luego se pasa a la 20 gracias. 
+  constructor(private http: HttpClient) { } // httpClient to http requests
 
   getCustomerList(): Observable<Customer[]> { // connect to API REST and return observable
     return this.http.get<Customer[]>(this.api);

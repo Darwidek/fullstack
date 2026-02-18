@@ -11,16 +11,16 @@ import { Customer } from '../../customer';
   templateUrl: './customer-list.component.html',
   styleUrls: ['./customer-list.component.css']
 })
-export class CustomerListComponent implements OnInit {
+export class CustomerListComponent implements OnInit { // it shows an delete customers
 
-  customers: Customer[] = [];
+  customers: Customer[] = []; // only declare data that will be needed in data binding
   // customerService: any;
 
 
   constructor(private customerService: CustomerService, private cdr: ChangeDetectorRef) { } // initialize CustomerList with a service attribute
 
   ngOnInit(): void {
-    this.listCustomers();
+    this.listCustomers(); // this method are executing while the view template
   }
 
   listCustomers() {

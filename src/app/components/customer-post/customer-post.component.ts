@@ -21,7 +21,7 @@ export class CustomerPostComponent implements OnInit {
   constructor(private customerService: CustomerService) { }; // The constructor is declared because the service will not be an attribute.
 
   ngOnInit(): void {
-
+ // nobody method to show customers while the view html templaate
   }
 
   addCustomer() {
